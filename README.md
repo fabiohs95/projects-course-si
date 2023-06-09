@@ -1,7 +1,7 @@
 # projects-course-si
-**Este repositório foi criadopara fins de compartilhamentos de códigos escritos durante o  proesso de aprendizado do curso de sistemaspara internet na UNCISAL**
+## **Este repositório foi criadopara fins de compartilhamentos de códigos escritos durante o  proesso de aprendizado do curso de sistemaspara internet na UNCISAL**
 
-##  segue abaixo  alguns códgos  simples já testados mas que podem gerar algumas issues ocasionais. Por favor, não exite em mandar sua issue ou  pull request!
+  _segue abaixo  alguns códgos  simples já testados mas que podem gerar algumas issues ocasionais. Por favor, não exite em mandar sua issue ou  pull request!_
 
 ### __*Sorteio  aleatório*__
  
@@ -9,4 +9,9 @@
 num_aleatorio = random.randint(0,100)
 a = int(input("digite un número entre 0 e 100"))
 print ("resultado do sorteio: {}".format(num_aleatorio))
-print("Parabéns!! se fosse a Mega-Sena você estaria milionário" if a == num_aleatorio else "Vixe, está sem sorte")```
+print("Parabéns!! se fosse a Mega-Sena você estaria milionário" if a == num_aleatorio else "Vixe, está sem sorte") 
+``` 
+## Lista:
+- [ ] Checar erros/bugs
+- [ ] Teste de mesa
+- [ ] Aplicar melhorias
