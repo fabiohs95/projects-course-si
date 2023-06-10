@@ -1,0 +1,5 @@
+preco= float(input("digite o preço original do produto:"))
+desconto= int(input("agora informe o percentual de desconto (ex: 10):"))
+vf= preco - preco * (desconto/100)
+print("O valor final com {} por cento de desonto é: {} Reais".format(desconto, vf))
+print("Compra liberada" if  desconto > 0 and desconto < 100 else "compra negada, coloque um valor de desconto entre 0 e 100")
