@@ -1,7 +1,7 @@
 # projects-course-si
 ## **Este repositório foi criadopara fins de compartilhamento de códigos escritos durante o proesso de aprendizado do curso de sistemaspara internet na UNCISAL**
 
-  _segue abaixo  alguns códgos  simples já testados mas que podem gerar algumas issues ocasionais. Por favor, não exite em mandar sua issue ou  pull request!_
+  _seguem abaixo  alguns códgos  simples já testados mas que podem gerar algumas issues ocasionais. Por favor, não exite em mandar sua issue ou  pull request!_
 
 ### __*Sorteio  aleatório*__
  
