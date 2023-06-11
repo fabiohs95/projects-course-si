@@ -1,5 +1,22 @@
-num= int(input("Digite um número inteiro qualquer:"))
-if num % 1 == 0 and num % num == 0 and num != 1:
-  print("O número {} é primo!".format(num))
-elif num % 1 != 0 and num % num != 0:
-  print("O número {} não é primo!".format(num))
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num ** 0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+def main():
+    try:
+        num = int(input("Digite um número inteiro: "))
+        if num != int(num):
+            raise ValueError
+        if is_prime(num):
+            print(f"O número {num} é primo.")
+        else:
+            print(f"O número {num} não é primo.")
+    except ValueError:
+        print("Erro: Digite um número inteiro válido.")
+
+if __name__ == "__main__":
+    main()
