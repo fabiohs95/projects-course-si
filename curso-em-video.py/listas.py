@@ -1,8 +1,4 @@
-r= "S"
-while not r:
-    e= int(input("digite um número; "))
-    r= str(input("Deseja continuar? [S/N]")).upper()
-    if "S" < 2:
-        print("O seu número da sorte é: {}".format(e))
-    elif "S" > 2:
-        print("Seu número da sote é a soma entre esses números {}".format(e))
+valores= []
+for cont in range(0, 5):
+    valores.append(int(input("digite um número; ")))
+print(f"O maior número digitado foi: {round(max(valores))}\n O menor valor foi: {round(min(valores))}")
