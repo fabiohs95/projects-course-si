@@ -1,20 +1,21 @@
 import random
 menu= int(input("Escolha uma opção para definir o nível de dificuldade!\nOpção 1 (Fácil)\nOpção 2 (Médio)\nOpção 3 (Difícil)\nOpção 4 (Insano)\nDigite a opção: "))
 if menu == 1:
+    print("Nivel escolhido: Fácil!")
     n= int(input("Digite um número de 1 a 10:-> "))
     sorte= random.randint(1, 10)
     cont= 1
     while n != sorte:
         cont= cont + 1
         while cont == 3:
-            print("Dica:\n se for pra baixo:\ntente ir divindo o númrto digitado pela metade! Ex: 10/2: 5...")
+            print("Dica:\nO número está entre {} e {}".format(n, sorte + 1))
             if cont == 5:
                 print("Dica: Veja os números já digitado e elimine-os!")
             break
         if n < sorte and sorte - n <= 2:
             n= int(input("Opa, quase!\nUm pouco mais pra  cima!\nDigite: "))
         elif n < sorte and sorte - n >= 3 and sorte - n < 6:
-            n= int(input("Ainda não é esse!\nTente mais pra cima!\nO número está entre {} e {}\nDigite: ".format(n, sorte + 1)))
+            n= int(input("Ainda não é esse!\nTente mais pra cima!\nDigite: "))
         elif n < sorte and sorte - n >= 6:
             n= int(input("Ainda não é esse!\nBem mais pra cima!\nDigite: "))
         elif n > sorte and n - sorte <=2:
@@ -26,6 +27,7 @@ if menu == 1:
     else:
         print("Parabéns! Você acertou na {}° tentativa!\nO número sorteado foi: {}".format(cont, sorte))
 if menu == 2:
+    print("Nivel escolhido: Médio!")
     n= int(input("Digite um número de 1 a 50:-> "))
     sorte= random.randint(1, 50)
     cont= 1
@@ -53,6 +55,7 @@ if menu == 2:
     else:
         print("Parabéns! Você acertou na {}° tentativa!\nO número sorteado foi: {}".format(cont, sorte))
 if menu == 3:
+    print("Nivel escolhido: Difícil!")
     n= int(input("Digite um número de 1 a 100:-> "))
     sorte= random.randint(1, 100)
     cont= 1
@@ -76,6 +79,34 @@ if menu == 3:
         elif n > sorte and n - sorte >= 16 and n - sorte <= 41:
             n= int(input("Não é esse!\nTente mais pra baixo!\nDigite: "))
         elif n > sorte and n - sorte >= 42:
+            n= int(input("Errou!\nBem mais pra baixo!\nDigite: "))
+    else:
+        print("Parabéns! Você acertou na {}° tentativa!\nO número sorteado foi: {}".format(cont, sorte))
+if menu == 4:
+    print("Nivel escolhido: Insano!")
+    n= int(input("Digite um número de 1 a 1000:-> "))
+    sorte= random.randint(1, 1000)
+    cont= 1
+    while n != sorte:
+        cont= cont + 1
+        while cont == 10:
+            print("Dica!\n se for pra baixo:\nTente ir divindo o número digitado pela metade! Ex: 100/2: 50...")
+            if cont == 14:
+                print("Dica:\nVeja os números já digitados e elimine-os!")
+            elif cont == 18:
+                print("Dica!\nse for pra cima:\ndobre o número digitado anteriormente.")
+            break
+        if n < sorte and sorte - n <= 50:
+            n= int(input("Ainda não é esse!\nUm pouco mais pra  cima!\nDigite: "))
+        elif n < sorte and sorte - n >= 51 and sorte - n <= 101:
+            n= int(input("Não é esse!\nTente mais pra cima!\nDigite: "))
+        elif n < sorte and sorte - n > 101:
+            n= int(input("Errou!\nBem mais pra cima!\nDigite: "))
+        elif n > sorte and n - sorte <= 50:
+            n= int(input("Ainda não é esse!\nTente um pouco mais pra baixo!\nDigite: "))
+        elif n > sorte and n - sorte >= 51 and n - sorte <= 101:
+            n= int(input("Não é esse!\nTente mais pra baixo!\nDigite: "))
+        elif n > sorte and n - sorte > 101:
             n= int(input("Errou!\nBem mais pra baixo!\nDigite: "))
     else:
         print("Parabéns! Você acertou na {}° tentativa!\nO número sorteado foi: {}".format(cont, sorte))
