@@ -9,11 +9,11 @@ if menu == 1:
         if n < sorte and sorte - n <= 2:
             n= int(input("Opa, quase!\nUm pouco mais pra  cima!\nDigite: "))
         elif n < sorte and sorte - n >= 3 and sorte - n < 6:
-            n= int(input("Ainda não é esse!\nTente mais pra cima!\nDigite: "))
+            n= int(input("Ainda não é esse!\nTente mais pra cima!\nO número está entre {} e {}\nDigite: ".format(n, sorte + 1)))
         elif n < sorte and sorte - n >= 6:
             n= int(input("Ainda não é esse!\nBem mais pra cima!\nDigite: "))
         elif n > sorte and n - sorte <=2:
-            n= int(input("Opa, quase lá!\nTente um pouco mais pra baixo!\nDigite: "))
+            n= int(input("Opa, quase lá!\nTente um pouco mais pra baixo!\nO número está entre {} e {}\nDigite: ".format(n, sorte - 1)))
         elif n > sorte and n - sorte >= 3 and n - sorte < 6:
             n= int(input("Ainda não é esse!\nTente mais pra baixo!\nDigite: "))
         elif n > sorte and n - sorte >= 6:
@@ -29,7 +29,7 @@ if menu == 2:
         if n < sorte and sorte - n <= 5:
             n= int(input("Ainda não é esse!\nUm pouco mais pra  cima!\nDigite: "))
         elif n < sorte and sorte - n >= 6 and sorte - n < 20:
-            n= int(input("Ainda não é esse!\nTente mais pra cima!\nO número está entre {} e 45\nDigite: ".format(n)))
+            n= int(input("Ainda não é esse!\nTente mais pra cima!\nDigite: "))
         elif n < sorte and sorte - n >= 20:
             n= int(input("Ainda não é esse!\nBem mais pra cima!\nDigite: "))
         elif n > sorte and n - sorte <= 5:
@@ -38,5 +38,8 @@ if menu == 2:
             n= int(input("Ainda não é esse!\nTente mais pra baixo!\nDigite: "))
         elif n > sorte and n - sorte >= 20:
             n= int(input("Ainda não é esse!\nBem mais pra baixo!\nDigite: "))
+        while cont >= 5:
+            print("Dica: Tente ir divindo pela metade! Ex: 50/2: 25...")
+            break
     else:
         print("Parabéns! Você acertou na {}° tentativa!\nO número sorteado foi: {}".format(cont, sorte))
