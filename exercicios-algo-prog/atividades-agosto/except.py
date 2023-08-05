@@ -17,3 +17,4 @@ try:
     print(resultado)
 except Exception as error:
     print("Executou a exception")
+#Resposta letra (d)
