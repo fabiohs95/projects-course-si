@@ -10,3 +10,4 @@ def classifica_numero(numero):
 numero= int(input("Insira um número iteiro: "))
 classe= classifica_numero(numero)
 print(classe)
+#resposta letra (c)
