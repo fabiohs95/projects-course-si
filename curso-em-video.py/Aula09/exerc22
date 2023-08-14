@@ -1,0 +1,16 @@
+frase="curso em video python"
+print(frase)
+try:
+    nome=str(input("Digite seu nome: ")).strip()
+    Separa= nome.split()
+    PriNom= Separa[0]
+    if nome == int or nome == float:
+        print('Erro!\nDigite apenas Letras!')
+    else:
+        print(f'''Seu nome completo é:{nome.upper()}
+      \nSeu nome completo é: {nome.lower()}
+      \nSeu nome tem {len(nome) - nome.count(' ')} letras no total
+      \nSeu primeiro nome tem: {len(PriNom)} letras\n''')
+    
+except Exception as error:
+    print('Entrada inválida!\nVocê digitou apenas espaços!\nPor favor, digite Letras.')
