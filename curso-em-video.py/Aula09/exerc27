@@ -3,3 +3,7 @@ e mostre em seguida o primeiro e o ultimo nome separadamente
 Ex:Fabio Henrique Gomes
 prineiro: Fabio
 Ultimo: Gomes'''
+
+n= str(input("Digite seu nome completo: ")).strip()
+nome= n.split()
+print(f'Seu primeiro nome é: {nome[0]}\nSeu último nome é: {nome[-1]}')
