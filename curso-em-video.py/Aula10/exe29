@@ -1,0 +1,15 @@
+'''Exercício Python 29: Escreva um programa que leia a velocidade de um carro. 
+Se ele ultrapassar 80Km/h, mostre uma mensagem dizendo que ele foi multado. 
+A multa vai custar R$7,00 por cada Km acima do limite.'''
+
+from  time import sleep
+try:
+    vel= int(input('Digite a velocidade do carro em KM/h: '))
+    print('Analisado velocidade...')
+    sleep(1)
+    if vel > 80:
+        print(f'Você recebeu uma multa!\nSua multa é no valor de R$ {(vel-80)*7.00}')
+    else:
+        print('Você estava dentro do limite permitido!\nNenhuma multa a pagar.')
+except Exception as error:
+    print('Erro!\nEntre apenas com NÚMEROS inteiros.')
