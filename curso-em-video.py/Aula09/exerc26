@@ -8,6 +8,6 @@ letra= str(input('Digite a letra que deseja analisar: ')).strip().lower()
 contA= frase.count(letra)
 print('Analisando a Letra...\n')
 print(f'''A letra (a) aparece {contA} vezes na frase
-      \n*Aparece pela primeira vez na posição {frase.find(letra)+1 }
-      \n*Aparece pela última vez na posição {frase.rfind(letra)+1 - frase.count(' ')}''')
-print('OBS.: Os espaços não foram considerados na posição!')
+      \n*Aparece pela primeira vez na posição {frase.find(letra)+1}
+      \n*Aparece pela última vez na posição {frase.rfind(letra)+1}''')
+print('OBS.: Os espaços foram considerados na posição!')
