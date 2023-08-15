@@ -9,8 +9,8 @@ try:
     sleep(1)
     if vel > 80:
         multa= (vel - 80)*7.00
-        print('\033[;30;41mLimite de 80 Km/h ultrapassado.\033[m')
-        print(f'\033[;31mVocê recebeu uma multa!\nSua multa é no valor de R$ {multa}\033[m')
+        print(f'\033[;30;41mLimite de 80 Km/h foi ultrapassado em {vel-80} Km.\033[m')
+        print(f'\033[;31mVocê recebeu uma multa!\nSua multa é no valor de: \033[;41mR$ {multa}\033[m')
     else:
         print('\033[;30;42mVocê estava dentro do limite permitido!\033[m\n\033[;32mNenhuma multa a pagar.\nTenha um bom dia!\033[m')
 except Exception as error:
