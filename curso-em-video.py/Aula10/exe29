@@ -4,12 +4,14 @@ A multa vai custar R$7,00 por cada Km acima do limite.'''
 
 from  time import sleep
 try:
-    vel= int(input('Digite a velocidade do carro em KM/h: '))
+    vel= float(input('Digite a velocidade máxima, em Km/h, atingida pelo carro: '))
     print('Analisado velocidade...')
     sleep(1)
     if vel > 80:
-        print(f'Você recebeu uma multa!\nSua multa é no valor de R$ {(vel-80)*7.00}')
+        multa= (vel - 80)*7.00
+        print('\033[;30;41mLimite de 80 Km/h ultrapassado.\033[m')
+        print(f'\033[;31mVocê recebeu uma multa!\nSua multa é no valor de R$ {multa}\033[m')
     else:
-        print('Você estava dentro do limite permitido!\nNenhuma multa a pagar.')
+        print('\033[;30;42mVocê estava dentro do limite permitido!\033[m\n\033[;32mNenhuma multa a pagar.\nTenha um bom dia!\033[m')
 except Exception as error:
     print('Erro!\nEntre apenas com NÚMEROS inteiros.')
