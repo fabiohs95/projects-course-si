@@ -1,2 +1,12 @@
-'''Crie um progama queleia o nome de uma cidade 
+'''Crie um progama que leia o nome de uma cidade 
 e diga se o nome começa ou não com a palavra: Santo'''
+
+try:
+    city= str(input('Digite a cidade em que nasceu: ')).strip().upper()
+    print('Analisando a o nome da cidade')
+    if city[:5] == 'SANTO':
+        print(f'{city} começa com a palavra SANTO!')
+    else:
+        print(f'{city} Não começa com a palavra SANTO.')
+except Exception as error:
+    print("entrada inválida")
