@@ -1,2 +1,8 @@
 '''Crie um progamaque leia o nome de uma pessoa
 e diga se ela tem silva no nome'''
+
+nome= str(input('Dgite seu nome: ')).strip().lower()
+proc= 'silva' in nome
+print('Seu nome possui silva!' if proc == True else 'Seu nome não possui silva')
+
+#O "in" não é um método esim um OPERADOR que verifica se algo está contido em outro.
