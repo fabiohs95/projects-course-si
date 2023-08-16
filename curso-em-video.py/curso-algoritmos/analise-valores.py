@@ -14,6 +14,6 @@ for i in range(0, 5):
         SomaPar= SomaPar+v
 print(f'''A soma entre esse valores é: {soma}
 A média desses valores é igual à: {soma/5}
-Divisivel por 5 == {div5}
-Valores nulos == {null}
+Números divisiveis por 5: {div5}
+Quantidade de valores nulos: {null}
 A soma dos números pares é: {SomaPar}''') 
