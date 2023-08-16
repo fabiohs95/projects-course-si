@@ -6,7 +6,7 @@ div5=0
 null=0
 SomaPar=0
 for i in range(0, 5):
-    v=int(input(f'\033[1;42mInsira o {i+1}° valor:\033[m '))
+    v=float(input(f'\033[1;42mInsira o {i+1}° valor:\033[m '))
     soma= soma+v
     if v % 5 == 0:
         div5= div5 + 1
