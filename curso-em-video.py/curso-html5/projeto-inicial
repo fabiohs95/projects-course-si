@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>livraria-fhg.com</title>
+        <style>
+            h1{font-family:arial;
+            font-size:bold;
+            color:yellow;}
+        </style>
+    </head>
+    <body>
+        <div id="interface">
+            <hgroup>
+                <h3>Seja bem-vindo!</h3>
+                <h1>Livraria FHG</h1>
+                <h2>Levamos a magia da leitura até você</h2>
+                <h4>@livraria.fgh no instagram</h4>
+            </hgroup>
+        </div>
+        <img src="saved pictures/livraria-fhg.com">
+    </body>
+</html>
