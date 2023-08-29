@@ -77,8 +77,24 @@ div#interface {
 header#cabecalho img#icone {
     position: absolute;
     left: 780px;
-    top: 40px;
+    top: 70px;
 }
 header#cabecalho {
-    
+    border-bottom: #606060 solid;
+    height: 150px;
+}
+header#cabecalho h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+header#cabecalho h2 {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #888888;
+    padding: 0px;
+    margin-top: 0px;
 }
