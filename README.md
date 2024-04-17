@@ -1,7 +1,7 @@
 # projects-course-si
 ## **This repository was created for the purposes of sharing projects written during the learning process of the Internet Systems course at UNCISAL**
 ----------------------------
-## **Este repositório foi criado para fins de compartilhamento de projetos escritos durante o proesso de aprendizado no curso de sistemas para internet na UNCISAL**
+## **Este repositório foi criado para fins de compartilhamento de projetos escritos durante o processo de aprendizado no curso de sistemas para internet na UNCISAL**
 
   _seguem abaixo  alguns códgos  simples já testados mas que podem gerar algumas issues ocasionais. Por favor, não exite em mandar sua issue ou  pull request!_
 
